@@ -12,6 +12,7 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://calculatorflex.com'),
   title: {
     default: 'Online Free Calculator – Easy and Fast to Use',
     template: '%s | Online Free Calculator',
