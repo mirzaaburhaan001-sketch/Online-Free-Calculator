@@ -6,6 +6,9 @@ import { ageContent } from '@/lib/content'
 export const metadata: Metadata = {
   title: ageContent.title,
   description: ageContent.description,
+  alternates: {
+    canonical: '/age-calculator',
+  },
 }
 
 export default function Page() {
