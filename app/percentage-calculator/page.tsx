@@ -6,6 +6,9 @@ import { percentageContent } from '@/lib/content'
 export const metadata: Metadata = {
   title: percentageContent.title,
   description: percentageContent.description,
+  alternates: {
+    canonical: '/percentage-calculator',
+  },
 }
 
 export default function Page() {
