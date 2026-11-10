@@ -138,48 +138,31 @@ export const mortgageContent = {
   sections: [] as ContentSection[],
 }
 
+
 export const ageContent = {
   title: 'Age Calculator',
   subtitle: 'age calculator online',
   description:
     'Calculate your exact age in years, months, weeks, days, hours, minutes and seconds, and see how many days remain until your next birthday.',
   sections: [
-  {
-    heading: 'What Can You Do With This Age Calculator?',
-    list: [
-      'Calculate your exact age in years, months, weeks and days',
-      'Find your age in hours, minutes and seconds',
-      'Check how many days are left until your next birthday',
-      'Calculate your age using your date of birth and a target date',
-    ],
-  },
-  {
-    heading: 'How to Use the Age Calculator',
-    ordered: true,
-    list: [
-      'Enter your date of birth.',
-      'Select the target date.',
-      'Click the Calculate button.',
-      'View your exact age.',
-      'Check how many days remain until your next birthday.',
-    ],
-  },
- 
-{
-  heading: 'Frequently Asked Questions',
-},
-{
-  heading: 'How to Calculate Age in 2026?',
-  paragraphs: [
-    'Enter your date of birth, select a date in 2026, and click Calculate to find your exact age.',
-  ],
-},
-{
-  heading: 'How Old Am I? Age Calculator',
-  paragraphs: [
-    'Enter your birth date and target date into the Age Calculator to find out exactly how old you are.',
-  ],
-},
-
-] satisfies ContentSection[],
+    {
+      heading: 'About Our Age Calculator',
+      paragraphs: [
+        'Calculator Flex has created a free online Age Calculator to help you easily find out your age and how much time is left until your next birthday. This online calculator is very easy to use. Simply enter your date of birth, select the desired date, and click the Calculate button. It will show your exact age and also tell you when your next birthday is. Our Age Calculator helps you find your age quickly and easily.',
+      ],
+    },
+    {
+      heading: 'How Old Am I? Age Calculator',
+      paragraphs: [
+        'You just need to enter your date of birth and the desired date in the Age Calculator, then click the Calculate button to find out exactly how old you are.',
+      ],
+    },
+    {
+      heading: 'How to Calculate Age in 2026?',
+      paragraphs: [
+        'If you want to know your age in 2026, enter your date of birth and select a date in 2026. Then click the Calculate button to get your exact age.',
+        'For example, if your date of birth is 26 July 2003 and you want to know your age on 11 November 2026, enter both dates and click Calculate Age. The result will show that you are 23 years, 3 months, and 16 days old.',
+      ],
+    },
+  ] satisfies ContentSection[],
 }
