@@ -6,8 +6,10 @@ import { mathContent } from '@/lib/content'
 export const metadata: Metadata = {
   title: mathContent.title,
   description: mathContent.description,
+  alternates: {
+    canonical: '/math-calculator',
+  },
 }
-
 export default function Page() {
   return (
     <CalculatorPageLayout
