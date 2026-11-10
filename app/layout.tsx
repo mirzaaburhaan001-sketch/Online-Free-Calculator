@@ -4,7 +4,6 @@ import type { Metadata, Viewport } from 'next'
 import { Inter } from 'next/font/google'
 import { Navbar } from '@/components/site/navbar'
 import { Footer } from '@/components/site/footer'
-import { FAQSection } from '@/components/site/faq-section'
 import './globals.css'
 
 const inter = Inter({
@@ -57,8 +56,6 @@ export default function RootLayout({
         <Navbar />
 
         <div className="flex-1">{children}</div>
-
-        <FAQSection />
 
         <Footer />
 
