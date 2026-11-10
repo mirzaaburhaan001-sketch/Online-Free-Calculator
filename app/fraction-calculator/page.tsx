@@ -6,8 +6,10 @@ import { fractionContent } from '@/lib/content'
 export const metadata: Metadata = {
   title: fractionContent.title,
   description: fractionContent.description,
+  alternates: {
+    canonical: '/fraction-calculator',
+  },
 }
-
 export default function Page() {
   return (
     <CalculatorPageLayout
