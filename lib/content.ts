@@ -164,12 +164,22 @@ export const ageContent = {
       'Check how many days remain until your next birthday.',
     ],
   },
-  {
-    heading: 'Frequently Asked Questions',
-    paragraphs: [
-      'How to calculate age in 2026? Enter your date of birth, select a date in 2026 and click Calculate.',
-      'How old am I calculator age? Enter your birth date and target date to find out exactly how old you are.',
-    ],
-  },
+ 
+{
+  heading: 'Frequently Asked Questions',
+},
+{
+  heading: 'How to Calculate Age in 2026?',
+  paragraphs: [
+    'Enter your date of birth, select a date in 2026, and click Calculate to find your exact age.',
+  ],
+},
+{
+  heading: 'How Old Am I? Age Calculator',
+  paragraphs: [
+    'Enter your birth date and target date into the Age Calculator to find out exactly how old you are.',
+  ],
+},
+
 ] satisfies ContentSection[],
 }
