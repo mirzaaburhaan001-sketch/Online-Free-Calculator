@@ -1,6 +1,18 @@
+
+import Link from 'next/link'
 import type { ReactNode } from 'react'
 import type { ContentSection } from '@/lib/content'
 import { cn } from '@/lib/utils'
+
+const calculatorLinks = [
+  { title: 'Percentage Calculator', href: '/percentage-calculator' },
+  { title: 'Fraction Calculator', href: '/fraction-calculator' },
+  { title: 'Math Calculator', href: '/math-calculator' },
+  { title: 'Graphing Calculator', href: '/graphing-calculator' },
+  { title: 'Finance Calculator', href: '/finance-calculator' },
+  { title: 'Mortgage Calculator', href: '/mortgage-calculator' },
+  { title: 'Age Calculator', href: '/age-calculator' },
+]
 
 export function CalculatorPageLayout({
   title,
@@ -17,6 +29,10 @@ export function CalculatorPageLayout({
   wide?: boolean
   children: ReactNode
 }) {
+  const otherCalculators = calculatorLinks.filter(
+    (calculator) => calculator.title !== title,
+  )
+
   return (
     <main className="mx-auto max-w-6xl px-4 pt-10 sm:px-6 sm:pt-14">
       <header className="mx-auto max-w-3xl text-center">
@@ -28,6 +44,24 @@ export function CalculatorPageLayout({
       <section aria-label={`${title} tool`} className={cn('mx-auto mt-10', wide ? 'max-w-6xl' : 'max-w-3xl')}>
         {children}
       </section>
+
+      <nav aria-label="Other Calculators" className="mx-auto mt-14 max-w-3xl">
+        <h2 className="text-2xl font-semibold tracking-tight text-navy">
+          Other Calculators
+        </h2>
+        <ul className="mt-4 grid grid-cols-1 gap-3 sm:grid-cols-2">
+          {otherCalculators.map((calculator) => (
+            <li key={calculator.href}>
+              <Link
+                href={calculator.href}
+                className="text-navy-2 underline underline-offset-4 hover:text-navy"
+              >
+                {calculator.title}
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </nav>
 
       {sections.length > 0 && (
         <div className="mx-auto mt-14 max-w-3xl space-y-10">
