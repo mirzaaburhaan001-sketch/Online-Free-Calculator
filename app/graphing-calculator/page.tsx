@@ -6,6 +6,9 @@ import { graphingContent } from '@/lib/content'
 export const metadata: Metadata = {
   title: graphingContent.title,
   description: graphingContent.description,
+  alternates: {
+    canonical: '/graphing-calculator',
+  },
 }
 
 export default function Page() {
