@@ -6,6 +6,9 @@ import { financeContent } from '@/lib/content'
 export const metadata: Metadata = {
   title: financeContent.title,
   description: financeContent.description,
+  alternates: {
+    canonical: '/finance-calculator',
+  },
 }
 
 export default function Page() {
