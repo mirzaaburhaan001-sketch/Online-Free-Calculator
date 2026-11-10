@@ -143,5 +143,33 @@ export const ageContent = {
   subtitle: 'age calculator online',
   description:
     'Calculate your exact age in years, months, weeks, days, hours, minutes and seconds, and see how many days remain until your next birthday.',
-  sections: [] as ContentSection[],
+  sections: [
+  {
+    heading: 'What Can You Do With This Age Calculator?',
+    list: [
+      'Calculate your exact age in years, months, weeks and days',
+      'Find your age in hours, minutes and seconds',
+      'Check how many days are left until your next birthday',
+      'Calculate your age using your date of birth and a target date',
+    ],
+  },
+  {
+    heading: 'How to Use the Age Calculator',
+    ordered: true,
+    list: [
+      'Enter your date of birth.',
+      'Select the target date.',
+      'Click the Calculate button.',
+      'View your exact age.',
+      'Check how many days remain until your next birthday.',
+    ],
+  },
+  {
+    heading: 'Frequently Asked Questions',
+    paragraphs: [
+      'How to calculate age in 2026? Enter your date of birth, select a date in 2026 and click Calculate.',
+      'How old am I calculator age? Enter your birth date and target date to find out exactly how old you are.',
+    ],
+  },
+] satisfies ContentSection[],
 }
