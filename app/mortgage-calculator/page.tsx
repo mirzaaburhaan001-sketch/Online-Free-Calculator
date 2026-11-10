@@ -6,6 +6,9 @@ import { mortgageContent } from '@/lib/content'
 export const metadata: Metadata = {
   title: mortgageContent.title,
   description: mortgageContent.description,
+  alternates: {
+    canonical: '/mortgage-calculator',
+  },
 }
 
 export default function Page() {
