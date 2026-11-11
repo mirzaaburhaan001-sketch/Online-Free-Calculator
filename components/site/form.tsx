@@ -142,18 +142,23 @@ export function SegmentedControl<T extends string>({
   options: { value: T; label: string }[]
 }) {
   return (
-    <div role="radiogroup" aria-label={label} className="flex flex-wrap gap-1 rounded-xl bg-muted p-1">
+    <div
+      role="group"
+      aria-label={label}
+      className="flex flex-wrap gap-1 rounded-xl bg-[#EAF1F8] p-1"
+    >
       {options.map((o) => (
         <button
           key={o.value}
           type="button"
-          role="radio"
-          aria-checked={value === o.value}
+          aria-pressed={value === o.value}
           onClick={() => onChange(o.value)}
-         className={cn(
-  'flex-1 rounded-lg px-3 py-2 text-sm font-medium whitespace-nowrap transition-colors',
-  value === o.value ? 'bg-white text-navy shadow-xs' : 'bg-white text-navy hover:bg-sky',
-)}
+          className={cn(
+            'flex-1 rounded-lg px-3 py-2 text-sm font-medium whitespace-nowrap transition-colors',
+            value === o.value
+              ? 'bg-[#142B4A] text-white shadow-xs'
+              : 'bg-white text-[#142B4A] hover:bg-[#DCE8F5]',
+          )}
         >
           {o.label}
         </button>
