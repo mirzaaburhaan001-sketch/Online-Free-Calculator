@@ -150,10 +150,10 @@ export function SegmentedControl<T extends string>({
           role="radio"
           aria-checked={value === o.value}
           onClick={() => onChange(o.value)}
-          className={cn(
-            'flex-1 rounded-lg px-3 py-2 text-sm font-medium whitespace-nowrap transition-colors',
-            value === o.value ? 'bg-white text-navy shadow-xs' : 'text-muted-foreground hover:text-navy',
-          )}
+         className={cn(
+  'flex-1 rounded-lg px-3 py-2 text-sm font-medium whitespace-nowrap transition-colors',
+  value === o.value ? 'bg-white text-navy shadow-xs' : 'bg-white text-navy hover:bg-sky',
+)}
         >
           {o.label}
         </button>
