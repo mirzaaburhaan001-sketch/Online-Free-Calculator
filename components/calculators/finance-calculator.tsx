@@ -156,7 +156,7 @@ export function FinanceCalculator() {
                     onChange={(e) => setValues((v) => ({ ...v, [f.key]: e.target.value }))}
                     className="mt-2 h-11 w-full rounded-lg border border-border bg-white px-3 font-mono tabular-nums outline-none focus-visible:border-navy-2 focus-visible:ring-3 focus-visible:ring-navy-2/15 disabled:border-dashed disabled:bg-transparent disabled:text-center"
                   />
-                  <span className="mt-1.5 text-xs text-muted-foreground">{f.unit}</span>
+                  <span className="mt-1.5 text-xs text-navy">{f.unit}</span>
                 </div>
               )
             })}
