@@ -108,15 +108,15 @@ export function PercentageCalculator() {
       </form>
 
       <div aria-live="polite" className="mt-6 rounded-xl border border-[#D6E6FB] bg-sky p-5 sm:p-6">
-        <p className="text-xs font-medium uppercase tracking-wider text-navy-2/70">Result</p>
+        <p className="text-xs font-medium uppercase tracking-wider text-navy">Result</p>
         {result === null ? (
-          <p className="mt-2 text-muted-foreground">Enter values and press Calculate.</p>
+          <p className="mt-2 text-navy">Enter values and press Calculate.</p>
         ) : typeof result === 'string' ? (
           <p className="mt-2 font-medium text-destructive">{result}</p>
         ) : (
           <>
             <p className="mt-1 text-4xl font-bold tabular-nums tracking-tight text-navy">{result.value}</p>
-            <p className="mt-2 text-sm text-muted-foreground">{result.summary}</p>
+           <p className="mt-2 text-sm text-navy">{result.summary}</p>
           </>
         )}
       </div>
