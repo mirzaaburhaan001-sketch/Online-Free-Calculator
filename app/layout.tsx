@@ -38,11 +38,19 @@ export const metadata: Metadata = {
   },
 }
 
+
 export const viewport: Viewport = {
   colorScheme: 'light',
   themeColor: '#101D38',
   width: 'device-width',
   initialScale: 1,
+}
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'WebSite',
+  name: 'CalculatorFlex',
+  url: 'https://calculatorflex.com',
 }
 
 export default function RootLayout({
@@ -53,6 +61,13 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${inter.variable} bg-background`}>
       <body className="flex min-h-screen flex-col antialiased">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(jsonLd).replace(/</g, '\\u003c'),
+          }}
+        />
+
         <Navbar />
 
         <div className="flex-1">{children}</div>
