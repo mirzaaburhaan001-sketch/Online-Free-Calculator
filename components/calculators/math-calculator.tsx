@@ -207,9 +207,9 @@ export function MathCalculator() {
             ]}
           />
         </div>
-        <p className="rounded-lg bg-muted p-3 text-xs leading-relaxed text-muted-foreground">
-          {'Use EXP for scientific notation, e.g. 1.5e3 = 1500. Rounding applies when a fixed precision is selected.'}
-        </p>
+       <p className="rounded-lg bg-muted p-3 text-xs leading-relaxed text-navy">
+  {'Use EXP for scientific notation, e.g. 1.5e3 = 1500. Rounding applies when a fixed precision is selected.'}
+</p>
       </Card>
     </div>
   )
