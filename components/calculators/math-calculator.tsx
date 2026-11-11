@@ -116,9 +116,9 @@ export function MathCalculator() {
     <div className="grid gap-6 lg:grid-cols-[1fr_280px]">
       <Card className="overflow-hidden">
         <div className="bg-navy px-5 pb-5 pt-4 sm:px-6">
-          <p className="h-5 truncate text-right font-mono text-sm text-white/60" aria-label="Previous calculation">
-            {previous}
-          </p>
+         <p className="h-5 truncate text-right font-mono text-sm text-white/60">
+  {previous}
+</p>
           <label htmlFor="math-display" className="sr-only">
             Expression
           </label>
