@@ -1,6 +1,7 @@
 import { Analytics } from '@vercel/analytics/next'
 import type { Metadata, Viewport } from 'next'
 import { Inter } from 'next/font/google'
+import Script from 'next/script'
 import { Navbar } from '@/components/site/navbar'
 import { Footer } from '@/components/site/footer'
 import './globals.css'
