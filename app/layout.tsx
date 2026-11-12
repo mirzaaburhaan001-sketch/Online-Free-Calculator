@@ -59,7 +59,7 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode
 }>) {
-  return (
+   return (
     <html lang="en" className={`${inter.variable} bg-background`}>
       <body className="flex min-h-screen flex-col antialiased">
         <script
@@ -67,6 +67,21 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{
             __html: JSON.stringify(jsonLd).replace(/</g, '\\u003c'),
           }}
+        />
+
+        {/* Google Analytics 4 */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-J5YDTE2K05"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){window.dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-J5YDTE2K05');
+          `}
+        </Script>
         />
 
         <Navbar />
