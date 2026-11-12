@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     template: '%s | Online Free Calculator',
   },
   description:
-    'Free online calculators for percentages, fractions, math, graphing, finance, mortgages and age. Easy and fast to use.',
+  'Online free calculators for percentages, fractions, math, graphing, finance, mortgages and age. Easy and fast to use.',
   generator: 'v0.app',
   icons: {
     icon: [
