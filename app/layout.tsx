@@ -82,7 +82,6 @@ export default function RootLayout({
             gtag('config', 'G-J5YDTE2K05');
           `}
         </Script>
-        />
 
         <Navbar />
 
