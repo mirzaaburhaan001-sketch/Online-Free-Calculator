@@ -127,7 +127,56 @@ export const financeContent = {
   subtitle: 'free finance calculator online',
   description:
     'Solve for any time value of money variable — payment, interest rate, number of periods, present value or future value.',
-  sections: [] as ContentSection[],
+    sections: [
+    {
+      heading: 'How to Use a Financial Calculator',
+      paragraphs: [
+        'A financial calculator helps you calculate important financial values, including loan payments, interest rates, present value and future value. You can use it to understand loans, investments and other financial calculations.',
+        'To use the Finance Calculator, enter the known financial values and select the value you want to calculate. The calculator will work out the missing value based on the information provided.',
+      ],
+    },
+    {
+      heading: 'Understanding the Financial Calculator Variables',
+      list: [
+        'Number of Periods (N): The total number of payment or investment periods.',
+       'Interest Rate (I/Y): The annual interest rate used in the calculation.',
+        'Present Value (PV): The current value of a loan or investment.',
+        'Payment (PMT): The regular payment made or received during each period.',
+        'Future Value (FV): The value of an investment or loan at the end of the selected period.',
+      ],
+    },
+    {
+      heading: 'How to Calculate Loan Payments',
+      paragraphs: [
+        'A financial calculator can help estimate regular loan payments when you know the loan amount, interest rate and repayment period.',
+        'For example, consider a $20,000 loan with a 5% annual interest rate and a repayment period of 5 years. If payments are made monthly, the calculation uses 60 payment periods and a monthly interest rate of approximately 0.4167%.',
+        'Enter the known values into the calculator and solve for the payment amount to estimate the monthly repayment.',
+      ],
+    },
+    {
+      heading: 'Understanding Present Value and Future Value',
+      paragraphs: [
+        'Present Value (PV) represents the value of money today, while Future Value (FV) represents what that money may be worth at a later date based on an interest rate and time period.',
+        'For example, investing $100 for 5 years at an annual interest rate of 10% would result in an estimated future value of approximately $161.05, assuming annual compounding.',
+      ],
+    },
+    {
+      heading: 'Tips for Using a Financial Calculator',
+      list: [
+        'Enter the correct loan amount or investment value.',
+        'Make sure the interest rate matches the payment period.',
+        'Use the correct number of monthly or yearly periods.',
+        'Check all entered values before calculating.',
+        'Review the result to make sure it matches your financial assumptions.',
+      ],
+    },
+    {
+      heading: 'Conclusion',
+      paragraphs: [
+        'A financial calculator makes it easier to understand loans, payments, interest rates and investment values. By entering accurate information and selecting the value you want to calculate, you can quickly estimate important financial results.',
+      ],
+    },
+  ] satisfies ContentSection[],
 }
 
 export const mortgageContent = {
