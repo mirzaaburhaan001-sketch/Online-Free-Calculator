@@ -184,8 +184,80 @@ export const mortgageContent = {
   subtitle: 'free online mortgage calculator',
   description:
     'Estimate your monthly mortgage payment including taxes, insurance, PMI and HOA fees, and see how extra payments shorten your loan.',
-  sections: [] as ContentSection[],
-}
+sections: [
+  {
+    heading: 'How to Use a Mortgage Calculator',
+    paragraphs: [
+      'If you are planning to purchase a house, understanding your potential monthly mortgage payment can help you prepare financially. A mortgage calculator allows you to estimate these costs before making a decision.',
+      'Enter the house price and down payment to get started. You can also include property tax, home insurance, PMI and HOA fees for a more detailed estimate. Click Calculate to view your estimated monthly mortgage payment.',
+    ],
+  },
+  {
+    heading: 'Understanding Key Mortgage Information',
+    paragraphs: [
+      'Several important factors influence the overall cost of a mortgage. Understanding these details can help you make informed decisions when comparing home loan options.',
+    ],
+    list: [
+      'House Price: The purchase price of the property you plan to buy.',
+      'Down Payment: The amount you pay upfront. It can be entered as a percentage or a dollar amount.',
+      'Loan Period: The length of time you have to repay your mortgage.',
+      'Interest Rate: The annual percentage charged by the lender for borrowing money.',
+      'Home Insurance: The annual cost of insurance coverage for your property.',
+      'HOA Fees: Monthly homeowners association fees used to maintain shared facilities and community services.',
+    ],
+  },
+  {
+    heading: 'What Is Included in a Mortgage Payment?',
+    paragraphs: [
+      'A mortgage payment usually includes principal and interest, but other housing expenses may also affect your monthly costs.',
+      'Depending on your property and loan, these expenses may include property tax, home insurance, private mortgage insurance (PMI) and homeowners association (HOA) fees. Enter the applicable amounts into the calculator to see how they affect your estimated monthly payment.',
+    ],
+  },
+  {
+    heading: 'Making Additional Mortgage Payments',
+    paragraphs: [
+      'Making extra mortgage payments can help reduce your outstanding loan balance and potentially pay off your mortgage sooner. Calculator Flex lets you explore different additional payment options:',
+    ],
+    list: [
+      'Additional Monthly Payment: Extra money added to your regular monthly mortgage payment.',
+      'Additional Annual Payment: An extra amount paid once each year.',
+      'One-Time Payment: An additional payment made at a chosen point during the year.',
+    ],
+  },
+  {
+    heading: 'Analysing Your Mortgage Results',
+    paragraphs: [
+      'Beyond your estimated monthly payment, reviewing other mortgage results can help you understand the overall cost of your home loan and the potential benefits of making additional payments.',
+    ],
+    list: [
+      'Loan: The amount borrowed after subtracting your down payment from the house price.',
+      'Principal and Interest: The portion of your payment that goes towards repaying the loan and covering interest.',
+      'Total Interest: The estimated interest paid over the life of the mortgage.',
+      'Total Loan Cost: The combined cost of the principal and interest.',
+      'Payoff Period: The estimated time required to repay your mortgage.',
+      'Interest Saved: The estimated interest you may save through additional payments.',
+      'Time Saved: The estimated time by which extra payments may shorten your repayment period.',
+    ],
+  },
+  {
+    heading: 'How to Get an Accurate Mortgage Calculation',
+    list: [
+      'Enter the correct house price and down payment.',
+      'Check that the interest rate and loan period are accurate.',
+      'Include property tax and home insurance when applicable.',
+      'Add PMI and HOA fees if they apply to your property.',
+      'Try different additional payment amounts to compare repayment options.',
+      'Review both the estimated total interest and total loan cost.',
+    ],
+  },
+  {
+    heading: 'Manage Your Mortgage with Confidence',
+    paragraphs: [
+      'Buying a home is a significant long-term financial commitment. Understanding your mortgage payments, interest costs and repayment options can help you plan ahead.',
+      'Calculator Flex helps you explore different mortgage scenarios, estimate monthly payments and understand how additional payments may affect your loan repayment period and potential interest savings. Use the mortgage calculator to compare options and get a clearer picture of your expected home loan costs.',
+    ],
+  },
+] satisfies ContentSection[],}
 
 
 export const ageContent = {
