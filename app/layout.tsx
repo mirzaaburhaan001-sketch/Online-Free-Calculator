@@ -19,6 +19,32 @@ export const metadata: Metadata = {
   },
   description:
   'Online free calculators for percentages, fractions, math, graphing, finance, mortgages and age. Easy and fast to use.',
+  
+  openGraph: {
+    title: 'Online Free Calculator – Easy and Fast to Use',
+    description:
+      'Online free calculators for percentages, fractions, math, graphing, finance, mortgages and age. Easy and fast to use.',
+    url: 'https://calculatorflex.com',
+    siteName: 'CalculatorFlex',
+    images: [
+      {
+        url: '/calculatorflex-og-image.png',
+        width: 1200,
+        height: 630,
+        alt: 'CalculatorFlex – Free Online Calculator',
+      },
+    ],
+    locale: 'en_US',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Online Free Calculator – Easy and Fast to Use',
+    description:
+      'Online free calculators for percentages, fractions, math, graphing, finance, mortgages and age. Easy and fast to use.',
+    images: ['/calculatorflex-og-image.png'],
+  },
+
   generator: 'v0.app',
   icons: {
     icon: [
